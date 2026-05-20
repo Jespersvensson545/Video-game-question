@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React, { useState } from 'react'
 
 interface Props {
     onUpload: (file: File) => void
 }
 
-const ImageUpload = ({ onUpload}: Props) => {
+const ImageUpload = ({ onUpload }: Props) => {
     const [preview, setPreview] = useState<string | null>(null)
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -17,7 +17,12 @@ const ImageUpload = ({ onUpload}: Props) => {
     return (
         <div className="image-upload">
             <label htmlFor="upload">Ladda upp profilbild</label>
-            <input type="file" id="upload" accept="image/*" onChange={handleChange} />
+            <input
+                type="file"
+                id="upload"
+                accept="image/*"
+                onChange={handleChange}
+            />
             {preview && <img src={preview} alt="Förhandsgranskning" />}
         </div>
     )
