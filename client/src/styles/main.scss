@@ -1,0 +1,17 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+@use 'navbar';
+@use 'quiz';
+@use 'highscores';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font;
+  background: $secondary;
+  color: $dark;
+}
