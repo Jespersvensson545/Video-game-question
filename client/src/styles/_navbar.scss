@@ -2,8 +2,9 @@
 @use 'mixins' as *;
 
 .navbar {
-  background: $primary;       
+  background: $primary;
   padding: 1rem 2rem;
+  width: 100%;
   @include flex-center;
   justify-content: space-between;
 

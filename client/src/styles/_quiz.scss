@@ -91,6 +91,8 @@
                 background: $primary;
                 color: white;
             }
+             &.correct { background: $success; color: white; }
+      &.wrong { background: $danger; color: white; }
         }
     }
 }
