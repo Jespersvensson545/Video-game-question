@@ -1,6 +1,8 @@
 @use 'variables' as *;
 @use 'mixins' as *;
 @use 'navbar';
+@use 'quiz';
+@use 'highscores';
 
 * {
   margin: 0;
